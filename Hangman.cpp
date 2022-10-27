@@ -58,7 +58,7 @@ int main()
 	std::vector<std::string> words;
 	readWords(words);
 	unsigned int maxErrors;
-	std::cout << "Enter the number of tries." << std::endl;
+	std::cout << "Enter the number of maximum errors." << std::endl;
 	std::cin >> maxErrors;
 	gameplay(words, maxErrors);
 	return 0;
