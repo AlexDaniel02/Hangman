@@ -50,7 +50,7 @@ void gameplay(std::vector<std::string> words, int maxErrors)
 	if (playerAnswer == solution)
 		std::cout << "Congrats! You guessed the word.";
 	else
-		std::cout << "The game is over. You`ve reached the maximum number of errors.\nThe correct word was "<<solution<<".";
+		std::cout << "The game is over.\nThe correct word was "<<solution<<".";
 }
 
 int main()
@@ -58,7 +58,7 @@ int main()
 	std::vector<std::string> words;
 	readWords(words);
 	unsigned int maxErrors;
-	std::cout << "Enter the maximum number of errors." << std::endl;
+	std::cout << "Enter the number of tries." << std::endl;
 	std::cin >> maxErrors;
 	gameplay(words, maxErrors);
 	return 0;
